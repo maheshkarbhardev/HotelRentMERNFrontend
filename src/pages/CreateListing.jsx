@@ -130,7 +130,7 @@ const CreateListing = () => {
       });
 
       //send post request to server
-      const response = await fetch("http://localhost:3001/properties/create", {
+      const response = await fetch("https://hotelrentmernbackend.onrender.com/properties/create", {
         method: "POST",
         body: listingForm,
       });
