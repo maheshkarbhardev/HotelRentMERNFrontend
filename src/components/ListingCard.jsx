@@ -41,7 +41,7 @@ const ListingCard = ({
   const patchWishList = async () => {
     if (user?._id !== creator._id) {   //If user and listing cretor is same so He/ she cannot like 
       const response = await fetch(
-        `http://localhost:3001/users/${user._id}/${listingId}`,
+        `https://hotelrentmernbackend.onrender.com/users/${user._id}/${listingId}`,
         {
           method: "PATCH",
           headers: {
@@ -68,7 +68,7 @@ const ListingCard = ({
           {listingPhotoPaths?.map((photo, index) => (
             <div key={index} className="slide">
               <img
-                src={`http://localhost:3001/${photo.replace("public", "")}`}
+                src={`https://hotelrentmernbackend.onrender.com/${photo.replace("public", "")}`}
                 alt={`photo ${index + 1}`}
               />
               <div
