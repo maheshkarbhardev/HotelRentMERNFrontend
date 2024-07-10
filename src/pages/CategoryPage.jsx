@@ -17,7 +17,7 @@ const CategoryPage = () => {
       try {
         const response = await fetch(
           
-             `http://localhost:3001/properties?category=${category}`,
+             `https://hotelrentmernbackend.onrender.com/properties?category=${category}`,
             
           {
             method: "GET",
