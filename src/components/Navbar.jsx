@@ -59,7 +59,7 @@ const Navbar = () => {
           ) : (
             // eslint-disable-next-line jsx-a11y/img-redundant-alt
             <img
-              src={`http://localhost:3001/${user.profileImagePath.replace(
+              src={`https://hotelrentmernbackend.onrender.com/${user.profileImagePath.replace(
                 "public",
                 ""
               )}`}
